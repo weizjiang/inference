@@ -110,6 +110,14 @@ SUPPORTED_PROFILES = {
         "backend": "onnxruntime",
         "model-name": "mobilenet",
     },
+    # mobilenet_v2
+    "mobilenet_v2-tf": {
+        "inputs": "input:0",
+        "outputs": "MobilenetV2/Predictions/Reshape_1:0",
+        "dataset": "imagenet_mobilenet",
+        "backend": "tensorflow",
+        "model-name": "mobilenet_v2",
+    },
 
     # ssd-mobilenet
     "ssd-mobilenet-tf": {
